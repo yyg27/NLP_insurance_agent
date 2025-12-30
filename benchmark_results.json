@@ -1,0 +1,958 @@
+{
+  "reports": [
+    {
+      "model": "Groq Llama-3.3-70B",
+      "timestamp": "2025-12-31T00:13:54.293906",
+      "total_questions": 50,
+      "metrics": {
+        "avg_correctness": 0.7,
+        "avg_completeness": 0.653,
+        "avg_retrieval_quality": 0.584,
+        "avg_response_time": 29.93,
+        "hallucination_rate": 0.0
+      },
+      "by_difficulty": {
+        "easy": {
+          "count": 15,
+          "avg_score": 0.7
+        },
+        "medium": {
+          "count": 20,
+          "avg_score": 0.7
+        },
+        "hard": {
+          "count": 15,
+          "avg_score": 0.7
+        }
+      },
+      "detailed_results": [
+        {
+          "question_id": 1,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Yanlış yakıt dolumu sonucu motor hasarı ödenir mi?",
+          "response": "Yanlış yakıt dolumu sonucu motor hasarı %10'una kadar teminat altındadır.",
+          "ground_truth": "Evet, belirli bir limite kadar (poliçede yazar) teminat altındadır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 1.0,
+          "response_time": 22.316933155059814,
+          "keywords_found": [
+            "yanlış yakıt",
+            "motor",
+            "hasar"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 2,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Cam kırılması kasko kapsamında mıdır?",
+          "response": "Belirtilen kaynaklar cam kırılması için tamir sistemi ile ilgili bilgiler içeriyor, fakat kasko kapsamında olup olmadığını açıklamıyor. Bu nedenle, cam kırılması kasko kapsamında değildir.",
+          "ground_truth": "Evet, cam hasarları teminat altındadır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 41.16808319091797,
+          "keywords_found": [
+            "cam",
+            "kırılma"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 3,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Mini onarım hizmeti neleri kapsar?",
+          "response": "Mini onarım hizmeti, poliçenin geçerlilik süresi içerisinde yılda en fazla 2 kez sağlanır. Şirket, üretici firma veya farklı bir garanti sistemine dahil olan araçlar için bu hizmeti sağlamaz.",
+          "ground_truth": "Küçük ölçekli kaporta, boya, döşeme ve cam hasarlarını kapsar.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 0.5,
+          "response_time": 11.908652305603027,
+          "keywords_found": [
+            "mini onarım"
+          ],
+          "keywords_missing": [
+            "kapsam"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 4,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Aracım çalınırsa kasko ödeme yapar mı?",
+          "response": "Evet, aracınız çalınırsa kasko ödeme yapar. Aracın çalınma günündeki rayiç değeri ödenir.",
+          "ground_truth": "Evet, hırsızlık ana teminattır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.5,
+          "response_time": 13.917567491531372,
+          "keywords_found": [
+            "çalınma"
+          ],
+          "keywords_missing": [
+            "hırsızlık"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 5,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Yedek anahtar kaybı kasko kapsamında mı?",
+          "response": "Yedek anahtar kaybı kasko kapsamında değildir.",
+          "ground_truth": "Evet, kilit sisteminin değiştirilmesi teminata dahildir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.5,
+          "response_time": 12.094988346099854,
+          "keywords_found": [
+            "anahtar"
+          ],
+          "keywords_missing": [
+            "kayıp"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 6,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "İkame araç hizmeti kaç gündür?",
+          "response": "İkame araç hizmeti süresi belirsizdir.",
+          "ground_truth": "Poliçe türüne göre (genelde 7-15 gün) değişir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.0,
+          "response_time": 13.937984704971313,
+          "keywords_found": [],
+          "keywords_missing": [
+            "ikame araç",
+            "gün"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 7,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Lastik patlaması kasko kapsamında mıdır?",
+          "response": "Lastik patlaması kasko kapsamında değildir.",
+          "ground_truth": "Sadece patlama değil, kaza ile birlikte hasar oluşursa ödenir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 1.0,
+          "response_time": 36.261863708496094,
+          "keywords_found": [
+            "lastik",
+            "patlama"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 8,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Ferdi kaza teminatı vefat durumunu kapsar mı?",
+          "response": "Ferdi kaza teminatı vefat durumunu kapsar.",
+          "ground_truth": "Evet, poliçedeki limitler dahilinde kapsar.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 13.016535997390747,
+          "keywords_found": [
+            "ferdi kaza",
+            "vefat"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 9,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Deprem hasarları kaskoya dahil mi?",
+          "response": "Deprem hasarları kaskoya dahil değildir. Ancak, poliçe özel şartlarında aksine hüküm yoksa, deprem teminatı muafiyetli olarak alınmış ve araç deprem sonucu zarar görmüşse, yalnızca deprem muafiyeti uygulanır.",
+          "ground_truth": "Evet, kasko genel şartlarına ek olarak teminata dahildir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 0.5,
+          "response_time": 13.118898630142212,
+          "keywords_found": [
+            "deprem"
+          ],
+          "keywords_missing": [
+            "doğal afet"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 10,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Sel hasarı sonucu araç pert olursa ne olur?",
+          "response": "Araç pert olması durumunda sel hasarı sonucu, araçın çekilmesi ve kurtarılması hizmetleri daimi olarak teminat kapsamında yapılır.",
+          "ground_truth": "Rayiç değer üzerinden ödeme yapılır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 1.0,
+          "response_time": 33.80224585533142,
+          "keywords_found": [
+            "sel",
+            "pert"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 11,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Yangın teminatı sadece kaza anındakileri mi kapsar?",
+          "response": "Yangın teminatı, sadece kaza anında değil, aynı zamanda yangın vukuunu dolayısıyla yapılan söndürme, yıkma ve kurtarma ameliyelerinin ve yıldırımın doğrudan doğruya tesirlerinden, hırsızlık veya hırsızlığa teşebbüsten, tabii afetlerden ve makinelerin normal işlemesinden ve mutad kullanılmasından doğan aşınma ve yıpranmalardan da kapsar.",
+          "ground_truth": "Hayır, park halindeki yanmaları da kapsar.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 0.5,
+          "response_time": 15.371829748153687,
+          "keywords_found": [
+            "yangın"
+          ],
+          "keywords_missing": [
+            "yanma"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 12,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Kemirgen hayvanların verdiği zararlar ödenir mi?",
+          "response": "Kemirgen hayvanların verdiği zararlar, sigorta poliçesinde yukarıda sayılmayan ve bu Genel Şartlarda teminat dışında kalan zararlar arasında yer almaktadır.",
+          "ground_truth": "Evet, fare vb. hayvanların kablo kemirmesi teminat altındadır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 1.0,
+          "response_time": 14.396743535995483,
+          "keywords_found": [
+            "kemirgen",
+            "hayvan"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 13,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Kasko poliçesi satış durumunda ne olur?",
+          "response": "Kasko poliçesi satış durumunda, poliçe sahibinin yeni bir kasko poliçesi satın alması durumunda, eski poliçenin iptal edileceği ve yeni poliçenin geçerli olacağı belirtilmektedir.",
+          "ground_truth": "Poliçe kendiliğinden sonlanır (münfesih olur).",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.5,
+          "response_time": 13.172228336334229,
+          "keywords_found": [
+            "satış"
+          ],
+          "keywords_missing": [
+            "devir"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 14,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Hukuksal koruma teminatı limiti nedir?",
+          "response": "Couldn't reach definitive answer in 6 steps. Please make question more specific.",
+          "ground_truth": "Poliçede belirtilen avukatlık ve mahkeme gideri limitidir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 0.0,
+          "response_time": 155.76534461975098,
+          "keywords_found": [],
+          "keywords_missing": [
+            "hukuksal koruma",
+            "limit"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 15,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Orijinal cam değişimi her zaman mümkün müdür?",
+          "response": "Orijinal cam değişimi her zaman mümkün değildir. Talep edilmesi durumunda anlaşmalı cam servisinde gerçekleştirilecek 1 adet marka logosuz cam değişimi hasarsızlık indirimini etkilemez. Şirketimiz ile anlaşmalı cam servislerinin haricinde gerçekleştirilen ilk cam değişiminde %35 muafiyet uygulanır.",
+          "ground_truth": "Poliçe türüne (Muafiyetli/Muafiyetsiz) göre değişir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 1.0,
+          "response_time": 14.00957727432251,
+          "keywords_found": [
+            "orijinal cam",
+            "servis"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 16,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Anahtar ile çalınma (evden çalınma) durumu kapsamda mı?",
+          "response": "Evet, anahtar ile çalınma (evden çalınma) durumu teminat kapsamındadır.",
+          "ground_truth": "Kilitli olmayan yerden veya zorlama olmadan çalınma şartlarına bağlıdır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 13.978957653045654,
+          "keywords_found": [
+            "anahtar",
+            "evden çalınma"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 17,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Yurt dışında kaza yaparsam kaskom geçerli olur mu?",
+          "response": "Evet, yurt dışında kaza yaparsanız kasko geçerli olur.",
+          "ground_truth": "Sadece Türkiye sınırları içinde geçerlidir, ek teminat gerekir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.5,
+          "response_time": 14.029672384262085,
+          "keywords_found": [
+            "yurt dışı"
+          ],
+          "keywords_missing": [
+            "sınır"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 18,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Aracın içindeki kişisel eşyaların çalınması ödenir mi?",
+          "response": "Aracın içinde kişisel eşyaların çalınması, genel olarak teminat kapsamında değildir. Ancak, araç içerisinde bırakılan ve çalınan anahtarın kontak üzerinde veya araç içerisinde bırakıldığı sırada gerçekleşen araç çalınması, teminat kapsamındadır.",
+          "ground_truth": "Belirli bir limite kadar ve kilitli araç şartıyla ödenir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.2,
+          "completeness_score": 1.0,
+          "response_time": 12.914878129959106,
+          "keywords_found": [
+            "kişisel eşya",
+            "çalınma"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 19,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Hasar bildirim süresi kaç iş günüdür?",
+          "response": "Hasar bildirim süresi belirsizdir.",
+          "ground_truth": "Genel şartlara göre 5 iş günüdür.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.6666666666666666,
+          "response_time": 15.037010431289673,
+          "keywords_found": [
+            "bildirim",
+            "süre"
+          ],
+          "keywords_missing": [
+            "ihbar"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 20,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Özel servis ile yetkili servis farkı hasar ödemesini etkiler mi?",
+          "response": "Anadolu Mini Onarım Hizmeti Limitleri, özel servis ile yetkili servis arasındaki farkı hasar ödemesini etkilememektedir.",
+          "ground_truth": "Poliçede belirtilen servis ağı dışında kesinti yapılabilir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 1.0,
+          "response_time": 14.095147609710693,
+          "keywords_found": [
+            "özel servis",
+            "yetkili servis"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 21,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Eşdeğer parça kullanımı ne zaman başlar?",
+          "response": "Eşdeğer parça kullanımı, genel olarak, araçta meydana gelen hasarların onarımı sırasında kullanılır. Bu, araçta kullanılan parçaların aynı özelliklere sahip ve aynı kalitede olan parçalar ile değiştirilmesini ifade eder. Eşdeğer parça kullanımı, genellikle araç sahibinin onarım işlemlerinde tasarruf sağlaması ve araçın değerinin korunması için yapılır.",
+          "ground_truth": "Araç yaş ve parça türüne göre yasal mevzuata göre uygulanır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.2,
+          "completeness_score": 0.5,
+          "response_time": 14.071887016296387,
+          "keywords_found": [
+            "eşdeğer parça"
+          ],
+          "keywords_missing": [
+            "yan sanayi"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 22,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "LPG takılan aracın hasarı ödenir mi?",
+          "response": "LPG takımı olan aracın hasarı, poliçede LPG kullanımının ruhsata işlenmiş olması şartıyla teminat kapsamındadır. Aksi takdirde LPG'nin sebep olacağı yanma hasarları sonucu oluşacak zarar ve ziyan teminat haricidir.",
+          "ground_truth": "Ruhsata işli olması ve sigortacıya bildirilmiş olması gerekir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.5,
+          "response_time": 12.94926142692566,
+          "keywords_found": [
+            "lpg"
+          ],
+          "keywords_missing": [
+            "tüp"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 23,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Kusurlu olduğum kazada karşı tarafın hasarı nasıl ödenir?",
+          "response": "Kusurlu olduğum kazada karşı tarafın hasarı, öngörülemeyen bir olay sonucunda meydana gelirse, şirket tarafından karşı tarafın hasarı ödenir.",
+          "ground_truth": "İMM (İhtiyari Mali Mesuliyet) limitleri dahilinde ödenir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.5,
+          "response_time": 13.128773212432861,
+          "keywords_found": [
+            "karşı taraf"
+          ],
+          "keywords_missing": [
+            "imm"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 24,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Hatalı park yüzünden araç çekilirken hasar görürse ne olur?",
+          "response": "Hatalı park yüzünden araç çekilirken hasar görürse, araç kurtarılır ve hasarlı durumda olsa bile en yakın tamirhaneye çekilebilir.",
+          "ground_truth": "Çekici Anadolu Asistans ise teminat altındadır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.5,
+          "response_time": 13.015217304229736,
+          "keywords_found": [
+            "hatalı park"
+          ],
+          "keywords_missing": [
+            "çekici"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 25,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Valeye teslim edilen aracın çalınması ödenir mi?",
+          "response": "Evet, valeye teslim edilen aracın çalınması teminat kapsamındadır.",
+          "ground_truth": "İşletmenin sorumluluğundadır, kasko genellikle rücu eder veya reddeder.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 13.015018939971924,
+          "keywords_found": [
+            "vale",
+            "teslim"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 26,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Terör olayları hasarları hangi şartla ödenir?",
+          "response": "Terör olayları hasarları, 3713 sayılı Terörle Mücadele Kanununda belirtilen terör eylemleri ve bu eylemlerden doğan sabotaj ile bunları önlemek ve etkilerini azaltmak amacıyla yetkili organlar tarafından yapılan müdahaleler sonucunda meydana gelen zararlar, ödenir.",
+          "ground_truth": "Ek teminat olarak poliçeye eklenmiş olmalıdır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 1.0,
+          "response_time": 13.073131084442139,
+          "keywords_found": [
+            "terör",
+            "eylem"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 27,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Arıza nedeniyle yolda kalan araca hangi hizmet verilir?",
+          "response": "Arıza nedeniyle yolda kalan araca, araç trafik muayene organizasyon hizmeti verilir. Bu hizmet için sigortalı, çağrı merkezini arayarak talebini bildirir ve en yakın muayene istasyonu bilgisi verilir. Muayeneye giderken bulunması gereken evraklar hatırlatılır: Ruhsat, vergi temiz kağıdı, trafik poliçesi, LPG li araçlar için son 1 ay içinde yapılmış olan “gaz sızdırmaz” raporu, tadilatlı araçlarda yapılan tadilatın ruhsata işlenmiş durumdaki şekli.",
+          "ground_truth": "Çekici ve asistans hizmetleri verilir ancak parça ödenmez.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.8999999999999999,
+          "completeness_score": 0.5,
+          "response_time": 14.23358678817749,
+          "keywords_found": [
+            "arıza"
+          ],
+          "keywords_missing": [
+            "yolda kalma"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 28,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Hasarsızlık indirimi cam hasarında bozulur mu?",
+          "response": "Hasarsızlık indirimi cam hasarında bozulmaz, ancak ikinci ve daha sonraki münferit cam hasarları hasarsızlık kademesini etkiler.",
+          "ground_truth": "Yılda bir kez cam hasarı indirimi bozmaz (poliçeye göre).",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 14.099385499954224,
+          "keywords_found": [
+            "hasarsızlık",
+            "bozulma"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 29,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Araçta sigara yanığı oluşması kasko kapsamında mı?",
+          "response": "Araçta sigara yanığı oluşması kasko kapsamında değildir.",
+          "ground_truth": "Genellikle ek teminatla veya 'dahili hasar' kapsamında değerlendirilir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.5,
+          "response_time": 13.794425010681152,
+          "keywords_found": [
+            "sigara yanığı"
+          ],
+          "keywords_missing": [
+            "döşeme"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 30,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Kıymet kazanma tenzili nedir?",
+          "response": "Couldn't reach definitive answer in 6 steps. Please make question more specific.",
+          "ground_truth": "Eski parçanın yerine yenisi takıldığında oluşan değer artış düşüşüdür.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 0.0,
+          "response_time": 88.32321214675903,
+          "keywords_found": [],
+          "keywords_missing": [
+            "kıymet kazanma",
+            "eskime"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 31,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Aracın pert olması için hasar oranı ne olmalıdır?",
+          "response": "Aracın pert olması için hasar oranı belirsizdir.",
+          "ground_truth": "Genellikle %50-%70 arası hasar ve onarım maliyeti bakılır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 13.017807960510254,
+          "keywords_found": [
+            "pert",
+            "hasar oranı"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 32,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Ehliyetsiz araç kullanımı hasar ödemesini nasıl etkiler?",
+          "response": "Ehliyetsiz araç kullanımı hasar ödemesini etkilemez.",
+          "ground_truth": "Kesinlikle tazminat ödenmez, kasko dışıdır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.5,
+          "response_time": 13.184250116348267,
+          "keywords_found": [
+            "ehliyetsiz"
+          ],
+          "keywords_missing": [
+            "red"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 33,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Poliçe vadesi bitmeden iptal edilirse prim iadesi olur mu?",
+          "response": "İptal nedenine bağlı olarak prim iadesi olup olmadığını öğrenmek için daha fazla bilgiye ihtiyacım var. Lütfen iptal nedenini belirtiniz.",
+          "ground_truth": "Gün esasına göre iade yapılır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 13.97458791732788,
+          "keywords_found": [
+            "iptal",
+            "prim iadesi"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 34,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Radyo-teyp çalınması teminata dahil midir?",
+          "response": "Radyo-teyp çalınması, Ses, Görüntü ve İletişim Cihazları olarak kabul edilir. Dolayısıyla, poliçede belirtilen araç ile araca ilave edilen değerler, poliçe başlangıç tarihi ile hasar tarihi arasında geçen sürede enflasyondan korunur.",
+          "ground_truth": "Orijinal ise dahildir, sonradan takıldıysa bildirilmelidir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 13.220327854156494,
+          "keywords_found": [
+            "radyo",
+            "teyp"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 35,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Kıvılcım sıçraması sonucu oluşan hasarlar yangın sayılır mı?",
+          "response": "Kıvılcım sıçraması sonucu oluşan hasar yangın sayılır.",
+          "ground_truth": "Evet, yangın teminatı kapsamında değerlendirilir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 130.49768352508545,
+          "keywords_found": [
+            "kıvılcım",
+            "yangın"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 36,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Sel sırasında motoru çalıştırmak hasarın reddine yol açar mı?",
+          "response": "Aracın motorunu sel sırasında çalıştırmak, hasar reddine yol açmaz.",
+          "ground_truth": "Brüt kusur ve hasarı ağırlaştırma gerekçesiyle red sebebi olabilir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.3333333333333333,
+          "response_time": 14.116461515426636,
+          "keywords_found": [
+            "sel"
+          ],
+          "keywords_missing": [
+            "motor çalıştırma",
+            "su çekme"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 37,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "6 ay önce yapılan onarımın tekrarlaması durumunda garanti var mı?",
+          "response": "Couldn't reach definitive answer in 6 steps. Please make question more specific.",
+          "ground_truth": "Anlaşmalı servislerde onarım garantisi poliçede belirtilir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 0.0,
+          "response_time": 99.32513427734375,
+          "keywords_found": [],
+          "keywords_missing": [
+            "tekrar hasar",
+            "garanti"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 38,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Alkollü araç kullanımında rücu şartları nelerdir?",
+          "response": "Alkollü araç kullanımında rücu şartları, sürücünün uyuşturucu, keyif verici maddeler veya alkollü içki almış olması nedeniyle güvenli sürme yeteneğini kaybetmiş olarak aracı kullanması ve bu nedenle meydana gelen kazalardan doğan uyuşmazlıklardır.",
+          "ground_truth": "Zorunlu trafik sigortası ve kasko genel şartlarına göre belirlenir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 0.6666666666666666,
+          "response_time": 12.188050031661987,
+          "keywords_found": [
+            "alkol",
+            "rücu"
+          ],
+          "keywords_missing": [
+            "promil"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 39,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "İstihap haddi (aşırı yük) aşımı hasarı nasıl etkiler?",
+          "response": "Aşırı yük istihap haddi hasarı, araçın kaportası üzerinde meydana gelen ezik, vuruk ve göçüklerin “Puntalı Göçük Çektirme” tekniği ile düzeltilerek eski haline getirilme işlemine neden olur. Bu işlem, sadece ezik, vuruk ve göçüklerin kaporta düzeltme işleminden ibarettir.",
+          "ground_truth": "Hasar ile illiyet bağı varsa tazminat ödenmeyebilir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 15.399029016494751,
+          "keywords_found": [
+            "istihap haddi",
+            "aşırı yük"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 40,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Aracın ikinci el değer kaybı kasko tarafından karşılanır mı?",
+          "response": "Couldn't reach definitive answer in 6 steps. Please make question more specific.",
+          "ground_truth": "Kasko sadece hasarı onarır, değer kaybı genellikle kapsam dışıdır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 0.0,
+          "response_time": 140.74148678779602,
+          "keywords_found": [],
+          "keywords_missing": [
+            "değer kaybı",
+            "ikinci el"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 41,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "2025 yılı zorunlu trafik sigortası tavan fiyatları nedir?",
+          "response": "2025 yılı zorunlu trafik sigortası tavan fiyatları, gerçekleşen TÜFE ve ÜFE artış oranlarının ortalamasının % 25 fazlasına kadar, hasar tarihindeki piyasa değerini geçmemek kaydıyla otomatik olarak koruma altındadır.",
+          "ground_truth": "Dokümanda bu bilgi bulunmamaktadır (Sadece Kasko içerir).",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.8999999999999999,
+          "completeness_score": 1.0,
+          "response_time": 12.066810846328735,
+          "keywords_found": [
+            "trafik sigortası",
+            "fiyat"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 42,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "BMW F30 motor yağı kaç kilometrede değişir?",
+          "response": "Araç grubu ve tipine göre değişkenlik gösteren motor yağı değişim kilometre limiti belirsizdir.",
+          "ground_truth": "Dokümanda teknik bakım kılavuzu bulunmamaktadır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 0.5,
+          "response_time": 13.933871507644653,
+          "keywords_found": [
+            "motor yağı"
+          ],
+          "keywords_missing": [
+            "bakım"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 43,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Anadolu Sigorta hisseleri bugün borsada kaç TL?",
+          "response": "Couldn't reach definitive answer in 6 steps. Please make question more specific.",
+          "ground_truth": "Güncel finansal veriler dokümanda yoktur.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 0.0,
+          "response_time": 43.839062213897705,
+          "keywords_found": [],
+          "keywords_missing": [
+            "borsa",
+            "hisse"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 44,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Konut sigortası kapsamında su tesisatı arızası ödenir mi?",
+          "response": "Belirli bir sonuç bulunamadı. Konut sigortası kapsamında su tesisatı arızası ödenir mi? Bu soruya kesin bir cevap veremem.",
+          "ground_truth": "Bu kasko dokümanıdır, konut sigortasını kapsamaz.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 97.39392375946045,
+          "keywords_found": [
+            "konut sigortası",
+            "tesisat"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 45,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "En iyi kasko şirketi hangisidir?",
+          "response": "Bu poliçe, kasko şirketlerinin sıralamasını veya en iyi kasko şirketlerini listesini belirtmemektedir.",
+          "ground_truth": "Doküman objektif poliçe şartlarını içerir, kıyaslama yapmaz.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.7,
+          "completeness_score": 0.5,
+          "response_time": 67.90383410453796,
+          "keywords_found": [
+            "en iyi"
+          ],
+          "keywords_missing": [
+            "kıyas"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 46,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Apple CarPlay bağlantı hatası nasıl düzeltilir?",
+          "response": "Apple CarPlay bağlantı hata sorununuz için poliçenizin ilgili klozunu kontrol ediniz. Poliçenizin üzerinde basılı olan kloz geçerli olacaktır.",
+          "ground_truth": "Teknik yazılım desteği kasko kapsamında değildir.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 14.245051383972168,
+          "keywords_found": [
+            "carplay",
+            "bağlantı"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 47,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Almanya plakalı araca Türkiye'den kasko yapılır mı?",
+          "response": "Kasko alındığında, aracın hareketini sağlayacak yedek parça temin edilememesi durumunda, yedek parça bulunup gönderilmesi organizasyonu yapılacaktır. Bu hizmet, Türkiye Cumhuriyeti sınırları içerisinde geçerli olup, Kuzey Kıbrıs Türk Cumhuriyeti hariç, tüm Türkiye'de geçerli olacaktır.",
+          "ground_truth": "Doküman tescil mevzuatı içermez.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.0,
+          "response_time": 14.244877815246582,
+          "keywords_found": [],
+          "keywords_missing": [
+            "almanya",
+            "plaka"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 48,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Sigorta Genel Müdürü kimdir?",
+          "response": "Anadolu Sigorta Genel Müdürü hakkında bilgi bulunamadı.",
+          "ground_truth": "Personel bilgisi dokümanda yer almamaktadır.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 0.5,
+          "response_time": 36.26047325134277,
+          "keywords_found": [
+            "genel müdür"
+          ],
+          "keywords_missing": [
+            "kimdir"
+          ],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 49,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "MTV ödemesi kredi kartına taksit yapılır mı?",
+          "response": "MTV ödemesi kredi kartına taksit yapılabilmektedir.",
+          "ground_truth": "Vergi ödeme detayları sigorta poliçesinde yer almaz.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.5,
+          "completeness_score": 1.0,
+          "response_time": 13.938709259033203,
+          "keywords_found": [
+            "mtv",
+            "taksit"
+          ],
+          "keywords_missing": [],
+          "evaluation_notes": ""
+        },
+        {
+          "question_id": 50,
+          "model_name": "Groq Llama-3.3-70B",
+          "question": "Kaza sonrası karşı tarafa açılacak dava için avukat önerir misin?",
+          "response": "Kaza sonrası karşı tarafa açılacak dava için, şirketin önerdiği avukatlar listesi bulunmamaktadır. Ancak, şirketin 1'inci ile 3'üncü bölümleri arasında, öngörülemeyen bir olay sonucunda meydana gelen tahribatlar için, şirketin Lehdar'a karşı sorumlulukları bulunmaktadır.",
+          "ground_truth": "Doküman avukat tavsiyesi içermez.",
+          "correctness_score": 0.7,
+          "hallucination_detected": false,
+          "retrieval_quality": 0.8999999999999999,
+          "completeness_score": 0.5,
+          "response_time": 13.118109941482544,
+          "keywords_found": [
+            "dava"
+          ],
+          "keywords_missing": [
+            "avukat önerisi"
+          ],
+          "evaluation_notes": ""
+        }
+      ]
+    }
+  ],
+  "comparison": null
+}
